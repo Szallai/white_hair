@@ -1,0 +1,200 @@
+/*!
+ * Egyedi CSS kód
+ * Szallai Krisztian
+ */
+ 
+ body{
+	background:#eee;
+	margin: 0;
+    font-family: Arial, sans-serif;
+
+ }
+ 
+.container {
+	padding:1em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+h1#title {
+	border-bottom: 4px solid #fafafa;
+	padding:1.5em;
+	text-transform:uppercase
+}
+
+.form-container {
+	padding:1em;
+	width:50%;
+	background-color: #fff;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	
+}
+
+.form-group{
+	margin-bottom:1em;
+	position: relative;
+
+}
+.form-group label {
+  display: flex;
+  font-weight:bold;
+  line-height: 30px;
+}
+.form-group label.form-check-label {
+  display: inline;
+  font-weight:normal;
+  line-height: 30px;
+}
+.form-group select.form-selection,.form-group select.form-selection:hover,.form-group select.form-selection:focus{
+	border: 1px solid #e2eded;
+    border-color: #eaf1f1 #e4eded #dbe7e7 #e4eded;
+	-ms-box-sizing:content-box;
+	-moz-box-sizing:content-box;
+	-webkit-box-sizing:content-box; 
+	box-sizing:content-box;
+}
+
+.form-control,.form-control:focus,.form-control:hover{
+	border: 0;
+    outline: 0;
+}
+.btn {
+	background-color:#2c3e50;
+	border:1px solid #34495e;
+	padding:1em;
+	font-weight:bold;
+	color:#fff;
+	cursor:pointer;
+	border-radius:1px;
+	margin:0.5em;
+	text-decoration:none;
+}
+.btn:hover {
+	background-color:#34495e;
+}
+.btn:focus, .btn:active {
+	background-color :#34495e;
+	opacity:0.80;
+}
+.float-right {
+	float:right;
+}
+
+.form-control:hover,
+.form-control:focus,
+.form-control:active {
+	opacity:0.80;
+	border-top:2px solid #fafafa;
+	border-bottom:2px solid #fafafa;
+
+}
+.form-control {
+	padding:1.5em;
+	letter-spacing: 1px;
+	width: 50%;
+	text-transform:uppercase;
+	background-color:#fafafa;
+	padding-left: 0.5em;
+	flex: 1; 
+	border-top:2px solid #fafafa;
+	font-weight:bold;
+	border-bottom:2px solid #fafafa;
+}
+
+.form-control.is-invalid,
+.form-control.is-invalid:hover,
+.form-control.is-invalid:focus,
+.form-control.is-invalid:active {
+    border-bottom: 2px solid #c0392b;
+}
+.form-control.is-valid,
+.form-control.is-valid:hover,
+.form-control.is-valid:focus,
+.form-control.is-valid:active {
+    border-bottom: 2px solid #27ae60;
+}
+
+.invalid-icon {
+	position: absolute;
+	right:50%;
+	margin:-2em;
+}
+
+.invalid-icon:before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 2px;
+  background-color: #c0392b;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.invalid-icon:after {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 2px;
+  background-color: #c0392b;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.valid-icon {
+  color: #27ae60;
+  margin-left:8px;
+  margin-top: 20px;
+  position: absolute;
+  width: 14px;
+  height: 8px;
+  border-bottom: solid 2px currentColor;
+  border-left: solid 2px currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.alert{
+	text-align:center;
+	background-color:#2ecc71;
+	color:#fff;
+	padding:1em;
+	margin:1em;
+}
+.alert-header {
+	font-size:1.5rem;
+	font-weight:bold;
+	letter-spacing:2px;
+}
+.alert-body {
+	margin-top:1em;
+}
+span.errortext {
+	font-size:small;
+	color:red;
+	display: inline-block;
+	font-size: 12px;
+	line-height: 15px;
+	margin: 2em 0 0;
+	width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    h1#title {
+		padding:1.5px;
+	}
+	.form-container {
+		width:75%;
+	}
+	.form-control {
+		width:100%;
+		padding:1.5em 0;
+	}.invalid-icon {
+		right:5%;
+		margin:-2em 0;
+	}
+	.valid-icon {
+		margin-left:-14px;
+	}
+}
